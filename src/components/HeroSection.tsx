@@ -8,10 +8,10 @@ export default function HeroSection() {
         <div className="max-w-5xl mx-auto animate-fade-in-up">
           {/* Main Headline */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            <span className="text-foreground">Never Miss Another Call.</span>
+            <span className="text-foreground">Never Miss Another Call</span>
             <br />
             <span className="text-glow bg-gradient-to-r from-primary to-blue-400 bg-clip-text text-transparent">
-              Never Lose Another Customer.
+              Never Lose Another Customer
             </span>
           </h1>
 

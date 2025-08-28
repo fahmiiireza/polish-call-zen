@@ -14,9 +14,9 @@ export default function EmotionalSection() {
           </div>
 
           <h2 className="text-4xl md:text-6xl font-bold mb-8 leading-tight">
-            Your Front Desk, <br />
+            Your Front Desk <br />
             <span className="text-glow bg-gradient-to-r from-primary to-blue-400 bg-clip-text text-transparent">
-              on Autopilot
+              On Autopilot
             </span>
           </h2>
 

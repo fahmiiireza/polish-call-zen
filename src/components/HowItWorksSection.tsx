@@ -4,7 +4,7 @@ const steps = [
   {
     icon: Link,
     title: "We Connect to Your Business",
-    description: "No complex setup, just plug in and go.",
+    description: "We make sure every call is connected.",
     number: "01",
   },
   {
