@@ -14,22 +14,18 @@ export default function HeroSection() {
               Never Lose Another Customer.
             </span>
           </h1>
-          
+
           {/* Subheadline */}
-          <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-            You focus on running your business. We'll take care of the ringing phone—day or night.
+          <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
+            You focus on running your business. We'll take care of the ringing 24/7.
           </p>
-          
+
           {/* CTA Button */}
           <div className="mb-8">
-            <Button 
-              size="lg" 
-              className="glow-button text-lg px-8 py-6 rounded-xl font-semibold group"
-              asChild
-            >
-              <a 
-                href="https://calendly.com/polished-group1/30min" 
-                target="_blank" 
+            <Button size="lg" className="glow-button text-lg px-8 py-6 rounded-xl font-semibold group" asChild>
+              <a
+                href="https://calendly.com/polished-group1/30min"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3"
               >
@@ -39,10 +35,9 @@ export default function HeroSection() {
               </a>
             </Button>
           </div>
-          
         </div>
       </div>
-      
+
       {/* Decorative Elements */}
       <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary rounded-full animate-pulse"></div>
       <div className="absolute top-3/4 right-1/4 w-1 h-1 bg-primary rounded-full animate-pulse delay-1000"></div>
