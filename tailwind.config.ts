@@ -18,6 +18,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -84,11 +87,42 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-glow': {
+					'0%, 100%': {
+						opacity: '0.3',
+						transform: 'translate(-50%, -50%) scale(1)'
+					},
+					'50%': {
+						opacity: '0.7',
+						transform: 'translate(-50%, -50%) scale(1.1)'
+					}
+				},
+				'fade-in-up': {
+					from: {
+						opacity: '0',
+						transform: 'translateY(30px)'
+					},
+					to: {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'glow': {
+					'0%, 100%': {
+						boxShadow: '0 0 30px hsl(195 100% 50% / 0.2)'
+					},
+					'50%': {
+						boxShadow: '0 0 50px hsl(195 100% 50% / 0.5)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-glow': 'pulse-glow 4s ease-in-out infinite',
+				'fade-in-up': 'fade-in-up 0.6s ease-out',
+				'glow': 'glow 2s ease-in-out infinite'
 			}
 		}
 	},
