@@ -4,7 +4,7 @@ const problems = [
   {
     icon: PhoneCall,
     title: "Too Many Calls",
-    description: "Don't let valuable customer slip away, we make sure every call is connected.",
+    description: "Don't let valuable customers slip away, we make sure every call is connected.",
   },
   {
     icon: Users,
