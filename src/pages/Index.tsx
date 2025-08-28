@@ -1,3 +1,4 @@
+import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import ProblemSolutionSection from "@/components/ProblemSolutionSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
@@ -7,11 +8,14 @@ import FinalCTASection from "@/components/FinalCTASection";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <HeroSection />
-      <ProblemSolutionSection />
-      <HowItWorksSection />
-      <EmotionalSection />
-      <FinalCTASection />
+      <Navigation />
+      <div className="pt-16"> {/* Add padding to account for fixed nav */}
+        <HeroSection />
+        <ProblemSolutionSection />
+        <HowItWorksSection />
+        <EmotionalSection />
+        <FinalCTASection />
+      </div>
     </div>
   );
 };
