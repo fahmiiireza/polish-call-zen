@@ -17,7 +17,7 @@ export default function HeroSection() {
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-            You focus on running your business. We'll take care of the ringing 24/7.
+            You focus on running your business. We take care of the ringing 24/7.
           </p>
 
           {/* CTA Button */}
