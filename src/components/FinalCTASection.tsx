@@ -43,10 +43,6 @@ export default function FinalCTASection() {
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-              <span>No setup fees</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-green-500 rounded-full"></div>
               <span>Instant results</span>
             </div>
           </div>
