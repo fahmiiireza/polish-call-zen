@@ -29,7 +29,7 @@ export default function HowItWorksSection() {
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             This is How We{" "}
             <span className="text-glow bg-gradient-to-r from-primary to-blue-400 bg-clip-text text-transparent">
-              Polished
+              Polish
             </span>{" "}
             Your Business
           </h2>
