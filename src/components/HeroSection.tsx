@@ -40,10 +40,6 @@ export default function HeroSection() {
             </Button>
           </div>
           
-          {/* Supporting Text */}
-          <p className="text-sm md:text-base text-muted-foreground max-w-2xl mx-auto">
-            See how Polished can answer, handle, and even make calls—so you don't have to.
-          </p>
         </div>
       </div>
       
