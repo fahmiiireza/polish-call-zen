@@ -1,27 +1,40 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Phone } from "lucide-react";
+import { ArrowRight, Phone, Play } from "lucide-react";
+import heroIllustration from "@/assets/hero-phone-illustration.jpg";
 
 export default function HeroSection() {
   return (
     <section className="hero-bg min-h-screen flex items-center justify-center relative overflow-hidden">
       <div className="container mx-auto px-6 text-center relative z-10">
-        <div className="max-w-5xl mx-auto animate-fade-in-up">
+        <div className="max-w-6xl mx-auto animate-fade-in-up">
           {/* Main Headline */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            <span className="text-foreground">Never Miss Another Call.</span>
-            <br />
+          <h1 className="text-6xl md:text-8xl font-bold mb-4 leading-tight">
             <span className="text-glow bg-gradient-to-r from-primary to-blue-400 bg-clip-text text-transparent">
-              Never Lose Another Customer.
+              Never Miss Another Call.
             </span>
           </h1>
           
-          {/* Subheadline */}
+          {/* Secondary Headline */}
+          <h2 className="text-2xl md:text-4xl font-semibold text-foreground/80 mb-8">
+            Never Lose Another Customer.
+          </h2>
+          
+          {/* Supporting Text */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-            You focus on running your business. We'll take care of the ringing phone—day or night.
+            We'll answer every call, 24/7 — so you can focus on running your business.
           </p>
           
-          {/* CTA Button */}
-          <div className="mb-8">
+          {/* Visual Storytelling */}
+          <div className="mb-12 relative">
+            <img 
+              src={heroIllustration} 
+              alt="Phone being answered automatically" 
+              className="mx-auto rounded-2xl shadow-2xl max-w-md w-full animate-pulse-glow"
+            />
+          </div>
+          
+          {/* CTA Buttons */}
+          <div className="mb-8 space-y-4">
             <Button 
               size="lg" 
               className="glow-button text-lg px-8 py-6 rounded-xl font-semibold group"
@@ -34,16 +47,31 @@ export default function HeroSection() {
                 className="inline-flex items-center gap-3"
               >
                 <Phone className="w-6 h-6" />
-                Book a Free Demo
+                Book a Free Demo — See How It Works in Minutes
                 <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
               </a>
             </Button>
+            
+            <div className="text-center">
+              <Button 
+                variant="ghost" 
+                className="text-primary hover:text-primary/80 font-medium group"
+                asChild
+              >
+                <a href="#demo-video" className="inline-flex items-center gap-2">
+                  <Play className="w-4 h-4" />
+                  Watch a 1-Min Demo Video
+                </a>
+              </Button>
+            </div>
           </div>
           
-          {/* Supporting Text */}
-          <p className="text-sm md:text-base text-muted-foreground max-w-2xl mx-auto">
-            See how Polished can answer, handle, and even make calls—so you don't have to.
-          </p>
+          {/* Trust Element */}
+          <div className="text-center">
+            <p className="text-sm text-muted-foreground font-medium">
+              Trusted by 500+ small businesses
+            </p>
+          </div>
         </div>
       </div>
       
