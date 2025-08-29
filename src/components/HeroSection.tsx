@@ -20,8 +20,8 @@ export default function HeroSection() {
             You focus on running your business. We take care of the ringing 24/7.
           </p>
 
-          {/* CTA Button */}
-          <div className="mb-8">
+          {/* CTA Buttons */}
+          <div className="mb-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button size="lg" className="glow-button text-lg px-8 py-6 rounded-xl font-semibold group" asChild>
               <a
                 href="https://calendly.com/polished-group1/30min"
@@ -32,6 +32,16 @@ export default function HeroSection() {
                 <Phone className="w-6 h-6" />
                 Book a Free Demo
                 <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
+              </a>
+            </Button>
+            
+            <Button variant="outline" size="lg" className="text-lg px-8 py-6 rounded-xl font-semibold border-2 hover:bg-primary/10" asChild>
+              <a
+                href="tel:+19496661646"
+                className="inline-flex items-center gap-3"
+              >
+                <Phone className="w-6 h-6" />
+                Experience Polished AI +1 949 666 1646
               </a>
             </Button>
           </div>
